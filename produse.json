@@ -1,0 +1,369 @@
+[
+    {
+      "product_id": "1",
+      "picture_path": "images/pizza/pizzaking.png",
+      "ingredients": "ingrediente: sos roșii, mozzarella, șuncă,ciuperci, măsline, capere, anghinare",
+      "description": "650 g Pizza King, 1029 kcal, 72 g carbohidrați, 63 g proteine, 49 g grăsimi, 7 g fibre",
+      "product_type": "pizza"
+    },
+
+    {
+      "product_id": "2",
+      "picture_path": "images/pizza/quatroformagi.png",
+      "ingredients": "ingrediente: sos roșii, mozzarella, gorgonzola, emmentaller, parmezan",
+      "description": "500 g Pizza Quattro Formaggi, 1125 kcal, 105 g carbohidrați, 50 g proteine, 50 g grăsimi, 12 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "3",
+      "picture_path": "images/pizza/quatrostagioni.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, șuncă, salam, ciuperci, măsline",
+      "description": "600 g Pizza Quattro Stagioni, 1126 kcal, 69 g carbohidrați, 73 g proteine, 57 g grăsimi, 7 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "4",
+      "picture_path": "images/pizza/salami.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, salam, ciuperci, măsline, ceapă",
+      "description": " 600 g Pizza Salami, 1207 kcal, 72 g carbohidrați, 71 g proteine, 66 g grăsimi, 7 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "5",
+      "picture_path": "images/pizza/capriciosa.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, șuncă, ciuperci, porumb",
+      "description": " 600 g Pizza Capriciosa, 1004 kcal, 78 g carbohidrați, 66 g proteine, 42 g grăsimi, 7 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "6",
+      "picture_path": "images/pizza/picanta.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, salam picant, ardei iute",
+      "description": " 500 g Pizza Picantă, 1253 kcal, 69 g carbohidrați, 77 g proteine, 71 g grăsimi, 6 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "7",
+      "picture_path": "images/pizza/prosciuttoecrudo.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, ciuperci, porumb, măsline, ardei gras",
+      "description": " 550 g Pizza Prosciutto e Crudo, 1031 kcal, 69 g carbohidrați, 67 g proteine, 48 g grăsimi, 6 g fibre",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "8",
+      "picture_path": "images/pizza/margherita.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, baby mozzarella, oregano, busuioc",
+      "description": " 500 g Pizza Margherita, 975 kcal, 152 g carbohidrați, 50 g proteine,\\n 18 g grăsimi",
+      "product_type": "pizza"
+    },
+    {
+      "product_id": "9",
+      "picture_path": "images/pizza/vegetariana.png",
+      "ingredients":"ingrediente: sos roșii, mozzarella, baby mozzarella, oregano, busuioc",
+      "description": "500 g Pizza Vegetariană/Post, 973 kcal, 80 g carbohidrați, 54 g proteine, 44 g grăsimi, 8 g fibre",
+      "product_type": "pizza"
+    },
+
+
+    
+    {
+      "product_id": "10",
+      "picture_path": "images/burgeri/burgerking.png",
+      "ingredients":"ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă caramelizată, sos King, sos barbeque",
+      "description": "500 g Burger King, 966 kcal, 57 g carbohidrați, 50 g proteine,\\n 56 g grăsimi",
+      "product_type": "burger"
+    },
+    {
+      "product_id": "11",
+      "picture_path": "images/burgeri/burgervegan.png",
+      "ingredients":"ingrediente: carne vegana, castraveți murați,salată, roșii, ceapă, maioneză, muștar,ketchup",
+      "description": "350 g Vegetarian Burger, 732 kcal, 59 g carbohidrați, 36 g proteine, 33 g grăsimi, 3 g fibre",
+      "product_type": "burger"
+    },
+    {
+      "product_id": "12",
+      "picture_path": "images/burgeri/dublucheesburger.png",
+      "ingredients":"ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă caramelizată, sos burger, maioneză",
+      "description": "500 g Dublu Cheeseburger, 1202 kcal, 50 g carbohidrați, 58 g proteine, \\n 81 g grăsimi",
+      "product_type": "burger"
+    },
+
+
+
+    {
+      "product_id": "13",
+      "picture_path": "images/burgeri/burgerpui.png",
+      "ingredients":"ingrediente: piept pui, cedar, mozzarella, castraveți murați,salată, roșii, ceapă, maioneză, muștar,ketchup",
+      "description": "400 g Burger Pui, 517 kcal, 52 g carbohidrați, 18 g proteine, 22 g grăsimi",
+      "product_type": "burger"
+    },
+    {
+      "product_id": "14",
+      "picture_path": "images/burgeri/burgerclasic.png",
+      "ingredients":"ingrediente: carne vită, cedar, mozzarella, castraveți murați,salată roșii, ceapă,sos burger, maioneză, ketchup",
+      "description": "400 g Burger Clasic, 789 kcal, 48 g carbohidrați, 38 g proteine, 44 g grăsimi",
+      "product_type": "burger"
+    },
+    {
+      "product_id": "15",
+      "picture_path": "images/burgeri/cheesburger.png",
+      "ingredients":"ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă, sos burger, maioneză",
+      "description": "400 g Cheeseburger, 869 kcal, 46 g carbohidrați, 38 g proteine, 54 g grăsimi",
+      "product_type": "burger"
+    },
+    
+
+
+    {
+      "product_id": "16",
+      "picture_path": "images/paste/carbonara.png",
+      "ingredients": "ingrediente: paste, smântână, mozzarella, bacon, usturoi, ou, parmezan",
+      "description": "500 g paste, 1011 kcal, 109 carbohidrați, 46 g proteine, 41 g grăsimi",
+      "product_type": "pasta"
+    },
+    {
+      "product_id": "17",
+      "picture_path": "images/paste/bolognese.png",
+      "ingredients": "ingrediente: paste, sos roșii, carne tocată, ceapă, usturoi, busuioc, oregano",
+      "description": "500 g paste, 385 kcal, 70 carbohidrați, 10 g proteine, 6 g grăsimi, 5 g fibre",
+      "product_type": "pasta"
+    },
+    {
+      "product_id": "18",
+      "picture_path": "images/paste/formagi.png",
+      "ingredients": "ingrediente: paste, smântână, gorgonzola, emmentaller, mozzarella, parmezan",
+      "description": "500 g paste, 1135 kcal, 150 carbohidrați, 83 g proteine, 87 g grăsimi, 9 g fibre, 8 g sare",
+      "product_type": "pasta"
+    },
+    {
+      "product_id": "19",
+      "picture_path": "images/paste/arrabiata.png",
+      "ingredients": "ingrediente: paste, sos roșii, ardei iute, usturoi, pătrunjel, parmezan",
+      "description": "500 g paste, 1135 kcal, 150 carbohidrați, 83 g proteine, 87 g grăsimi, 9 g fibre,\\n 8 g sare",
+      "product_type": "pasta"
+    },
+    {
+      "product_id": "20",
+      "picture_path": "images/paste/tagliatelecuton.png",
+      "ingredients": "ingrediente: paste, sos roșii, usturoi, ton, busuioc, oregano , parmezan",
+      "description": "500 g paste, 1237 kcal, 195 carbohidrați, 44 g proteine, 29 g grăsimi, 2 g fibre, \\n3 g sare",
+      "product_type": "pasta"
+    },
+    {
+      "product_id": "21",
+      "picture_path": "images/paste/tagliatelecucreveti.png",
+      "ingredients": "ingrediente: paste, sos roșii, creveți roșii cherry, usturoi, pătrunjel, lămâie",
+      "description": "500 g paste, 1303 kcal, 157 carbohidrați, 62 g proteine, 44 g grăsimi, 1 g fibre, \\n2 g sare ",
+      "product_type": "pasta"
+    },
+    
+
+    {
+      "product_id": "22",
+      "picture_path": "images/desert/lava.png",
+      "description": "200 g",
+      "ingredients": "lava cake și înghețată de ciocolată / vanilie / capșuni / mango",
+      "product_type": "desert"
+    },
+    {
+      "product_id": "23",
+      "picture_path": "images/desert/papanasi.png",
+      "description": "250 g",
+      "ingredients": "papanași cu dulceață de afine si smântână / nutella și vanilie",
+      "product_type": "desert"
+    },
+    {
+      "product_id": "24",
+      "picture_path": "images/desert/clatite.png",
+      "description": "140 g",
+      "ingredients": "clătite nutella și ciocolată / mac și sos de cireșe / brânză dulce și stafide",
+      "product_type": "desert"
+    },
+    {
+      "product_id": "25",
+      "picture_path": "images/desert/profiterol.png",
+      "description": "300 g",
+      "ingredients": "profiterol, cremă de vanilie,frișcă, înghețată, topping sirop",
+      "product_type": "desert"
+    },
+    {
+      "product_id": "26",
+      "picture_path": "images/desert/laptedepasare.png",
+      "description":"300 g" ,
+      "ingredients": "cremă de budincă, bezea, zahăr ars, topping sirop",
+      "product_type": "desert"
+    },
+    {
+      "product_id": "27",
+      "picture_path": "images/desert/ingetata.png",
+      "description": "200 g",
+      "ingredients": "înghețată cu gust de ciocolată / vanilie / capșuni / mango / fructe de pădure",
+      "product_type": "desert"
+    },
+
+    
+    {
+      "product_id": "28",
+      "picture_path": "images//sosurisigarnituri/cartofiprajiti.png",
+      "description": "200 g cartofi prăjiți 48 kcal, 6 g carbohidrați, 4 g proteine ",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "29",
+      "picture_path": "images//sosurisigarnituri/cartofidipping.png",
+      "description": "200 g cartofi Dipping Strips 290 kcal, 42 g carbohidrați, 10 g proteine ",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "30",
+      "picture_path": "images//sosurisigarnituri/cartofiwedges.png",
+      "description": "150 g cartofi wedges 348 kcal, 46 g carbohidrați, 6 g proteine, 15 grăsimi",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "31",
+      "picture_path": "images//sosurisigarnituri/maioneza.png",
+      "description": "30 g Maioneză 97 kcal, 10g grăsimi, 2 g glucide",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "32",
+      "picture_path": "images//sosurisigarnituri/ketchup.png",
+      "description": "30 g Ketchup 20 kcal, 0,04 g grăsimi, 4 g glucide, 0,4 g sare",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "33",
+      "picture_path": "images//sosurisigarnituri/sosusturoi.png",
+      "description": "50 g Sos de usturoi  137 kcal, 2 g carbohidrați,  13 g grăsimi",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "34",
+      "picture_path": "images//sosurisigarnituri/barbeque.png",
+      "description": "50 g Barbeque 77 kcal, 18 g carbohidrați, 14 g glucide",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "35",
+      "picture_path": "images//sosurisigarnituri/sosrosii.png",
+      "description": "50 g Sos de roșii 35 kcal, 2 g carbohidrați, 2 g grăsimi",
+      "product_type": "fries"
+    },
+    {
+      "product_id": "36",
+      "picture_path": "images//sosurisigarnituri/sosrosiipicant.png",
+      "description": "50 g Sos de roșii picant 64 kcal, 2 g carbohidrați, 6 g grăsimi",
+      "product_type": "fries"
+    },
+
+
+    {
+      "product_id": "37",
+      "picture_path": "images/bauturi/apaplatamare.png",
+      "description": "750 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "38",
+      "picture_path": "images/bauturi/apaplatamica.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "39",
+      "picture_path": "images/bauturi/apamineralamare.png",
+      "description": "750 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "40",
+      "picture_path": "images/bauturi/apamineralamica.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "41",
+      "picture_path": "images/bauturi/cola.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "42",
+      "picture_path": "images/bauturi/colazero.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "43",
+      "picture_path": "images/bauturi/fantaportocale.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "44",
+      "picture_path": "images/bauturi/cappypiersica.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "45",
+      "picture_path": "images/bauturi/cappyportocalerosii.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "46",
+      "picture_path": "images/bauturi/cappyportocale.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "47",
+      "picture_path": "images/bauturi/cappypere.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "48",
+      "picture_path": "images/bauturi/sprite.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "49",
+      "picture_path": "images/bauturi/nesteapiersica.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "50",
+      "picture_path": "images/bauturi/nestealemon.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "51",
+      "picture_path": "images/bauturi/nesteamangoananas.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "52",
+      "picture_path": "images/bauturi/tonicwater.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "53",
+      "picture_path": "images/bauturi/bitterlemon.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+    },
+    {
+      "product_id": "54",
+      "picture_path": "images/bauturi/mandarin.png",
+      "description": "330 ml",
+      "product_type": "bauturi"
+  }
+]

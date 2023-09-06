@@ -9,6 +9,125 @@ body {
 
 }
 
+.adauga{
+  background-color: transparent;
+  margin: none;  
+  cursor: pointer;
+  width:auto;
+  height:auto;
+
+}
+.adauga:active {
+  transform: scale(.86);
+  outline: none;
+}
+
+.adauga:before,
+.adauga:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+  outline: none;
+}
+.adauga.animate::before {
+  top: -70%;
+  background-image: radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, transparent 40%, #c3c3c3 50%, transparent 60%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, transparent 40%, #c3c3c3 45%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%);
+  background-size: 4% 40%, 50% 50%, 45% 45%, 50% 50%, 48% 48%, 40% 40%, 45% 45%,
+    40% 40%, 48% 48%;
+  animation: greentopBubbles ease-in-out 0.6s forwards infinite;
+}
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.adauga.animate::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, transparent 40%, #c3c3c3 45%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%),
+    radial-gradient(circle, #c3c3c3 50%, transparent 50%);
+  background-size: 45% 45%, 50% 50%, 48% 48%, 50% 50%, 45% 45%, 50% 50%, 48% 48%;
+  animation: greenbottomBubbles ease-in-out 0.6s forwards infinite;
+  
+}
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.carts{
+  
+  background-color: transparent;
+  text-align: center;
+  width:auto;
+  height:auto;
+  margin: 0 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.carts img {
+  background-attachment: fixed;
+  position: absolute;
+  z-index: 0;
+  left: 0%;
+  top: -50%;
+}
+
+.shoppingCartItemNo {
+  width: 20px;
+  height: 20px;
+  background-color: #cf1313; /* Circle background color */
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px; /* Font size of the number */
+  color: white; /* Text color */
+  position: absolute;
+  top: 0; /* Adjust the positioning as needed */
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -29,16 +148,25 @@ input[type=text]:focus, input[type=password]:focus {
 button {
   background-color: #ffbe33;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 8px 14px;
+  margin: 2px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 45%;
+  outline: none;
 }
 
 button:hover {
   opacity: 0.8;
+  outline: none;
 }
+
+button:disabled {
+  opacity: 0.8;
+  background-color: gray;
+  cursor:default;
+}
+
 
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -55,7 +183,7 @@ button:hover {
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.cancelbtn, .signupbtn  {
   float: left;
   width: 50%;
 }
@@ -118,6 +246,14 @@ hr {
   display: table;
 }
 
+.add-cart{
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  color: #ffffff;
+  margin: 0 10px;
+}
 
 /* Add Zoom Animation */
 .animate {
@@ -247,7 +383,7 @@ a:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%;  
 }
 
 .bg-box img {
@@ -478,6 +614,7 @@ a:focus {
 
 .slider_section .detail-box {
   color: #ffffff;
+  backdrop-filter: blur(1px);
   margin-bottom: 145px;
 }
 
@@ -820,7 +957,6 @@ a:focus {
   outline: none;
   color: #000000;
   border-radius: 5px;
-  outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -1145,6 +1281,54 @@ a:focus {
   color: inherit;
 }
 
+
+/* Apply basic styling to the table */
+/* Apply basic styling to the table */
+.table {
+  background-color: #ffffff7e;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+  font-family: Arial, sans-serif;
+  border: 2px solid #3498db;
+  text-align: center;
+}
+
+/* Style table header */
+.th {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Style alternating rows */
+.tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style table data cells */
+.td {
+  padding: 10px;
+  text-align: center;  
+}
+
+.quantityInput {
+  width: 10%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Add hover effect to rows */
+.tr:hover {
+  background-color: #ddd;
+}
+
+/* Add a bit of shadow to the table for a subtle 3D effect */
+.table {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
 
 

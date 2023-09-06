@@ -4,7 +4,7 @@ require_once "config.php";
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = $nr_telefon = $adresa = "";
-$username_err = $password_err = $nr_telefon_err = $confirm_password_err = "";
+$username_err = $password_err = $nr_telefon_err = $confirm_password_err = $adresa_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -76,39 +76,46 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //Validate nr_telefon
     if(empty(trim($_POST["adresa"]))){
-        $nr_telefon_err = "Introdu o adresa";
+        $adresa_err = "Introdu o adresa";
     } else{
         $adresa = trim($_POST["adresa"]);
     }
 
-    // Check input errors before inserting in database
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-        
-        // Prepare an insert statement
-        $sql = "INSERT INTO utilizatori (username, parola, nr_telefon, adresa) VALUES (?, ?, ?, ?)";
-         
-        if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password,  $param_nr_telefon, $param_adresa);
-            
-            // Set parameters
-            $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-            $param_nr_telefon = $nr_telefon;
-            $param_adresa = $adresa;
-            
-            // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Redirect to login page
-                header("location: login.php");
-            } else{
-                echo "Eroare la executare statement MySQL.";
-            }
+     echo $username_err, " ", $password_err, " ", $confirm_password_err, " ", $adresa_err;
 
-            // Close statement
-            mysqli_stmt_close($stmt);
+    // Check input errors before inserting in database
+    try {
+        if(empty($username_err) && empty($password_err) && empty($confirm_password_err) &&
+            empty($nr_telefon_err) && empty($adresa_err)){
+            // Prepare an insert statement
+            $sql = "INSERT INTO utilizatori (username, parola, nr_telefon, adresa) VALUES (?, ?, ?, ?)";
+
+            if($stmt = mysqli_prepare($link, $sql)){
+                // Bind variables to the prepared statement as parameters
+                mysqli_stmt_bind_param($stmt, "ssss", $param_username, $param_password,  $param_nr_telefon, $param_adresa);
+                
+                // Set parameters
+                $param_username = $username;
+                $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
+                $param_nr_telefon = $nr_telefon;
+                $param_adresa = $adresa;
+                // Attempt to execute the prepared statement
+                if(mysqli_stmt_execute($stmt)){
+                    // Redirect to login page
+                    $_SESSION["lastAction"] = "contCreat_succes";
+                    header("location: ../index.php");
+                } else{
+                    echo "Eroare la executare statement MySQL.";
+                }
+    
+                // Close statement
+                mysqli_stmt_close($stmt);
+            }
         }
+    } catch (\Throwable $th) {
+        echo $th;
     }
+    
     
     // Close connection
     mysqli_close($link);
