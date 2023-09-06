@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="">
+
+  <title> KingMaster </title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/home.jpg" alt="">
+    </div>
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+            <img src="images/logo.png" type="">
+              KingMaster
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">Meniu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Despre noi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="book.html">Rezervări</a>
+              </li>
+            </ul>
+            <div class="user_option">
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+
+
+
+
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                </div>
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+            <div>
+
+          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+          <div id="id02" class="modal">
+            <form class="modal-content" action="php/register.php" method="POST">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Creare cont.</p>
+                <hr>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>
+          
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="confirm_password" required>
+
+                <label for="num"><b>Număr de telefon</b></label>
+                <input type="text" placeholder="Enter Număr de telefon" name="nr_telefon" required>
+
+                <label for="address"><b>Adresă livrare</b></label>
+                <input type="text" placeholder="Adresa" name="adresa" required>
+                
+              </div>
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          </div>
+
+        </nav>
+      </div>
+     
+    
+    </header>
+    
+    
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Pizza
+                      <img src="images/logopizza.png" type="">
+                    </h1>
+                    <h6>
+                      <i>Aluatul pufos așteaptă să se rumenească în cuptorul încins, pentru a ajunge pe masa fiecăruia dintre voi, aducând o bucurie în suflet</i>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Burgeri
+                      <img src="images/logoburger.png" type="">
+                    </h1>
+                    <h6>
+                    <i>La KingMaster găsești unul dintre cei mai buni burgeri. Specialitatea noastră, Burgerul King este unul dintre puținii burgeri plini de savoare care var face să vă plouă în gură</i>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7 col-lg-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Paste
+                      <img src="images/logopaste.png" type="">
+                    </h1>
+                    <h6>
+                      <i>Pastele noastre sunt acele paste ce și le dorește toată lumea, potrivite la orice oră din zi. Avem cele mai delicioase și cele mai cremoase paste.  Te așteptăm să le încerci!</i>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ol class="carousel-indicators">
+            <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#customCarousel1" data-slide-to="1"></li>
+            <li data-target="#customCarousel1" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/burgeri/burgerking.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Burger King
+                </h5>
+                <h6>
+                  <span>ai 15% reducere de la 3 burgeri</span> 
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6  ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/pizza/pizzaking.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Pizza King
+                </h5>
+                <h6>
+                  <span>la 3 pizza primești 1 din partea casei</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="food_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Meniu
+        </h2>
+      </div>
+            
+      <ul class="filters_menu">
+        <li class="active" data-filter="*">Toate</li>
+        <li data-filter=".bauturi">Băuturi</li>
+        <li data-filter=".burger">Burgeri</li>
+        <li data-filter=".pizza">Pizza</li>
+        <li data-filter=".pasta">Paste</li>
+        <li data-filter=".desert">Desert</li>
+        <li data-filter=".fries">Sosuri și garnituri</li>
+      </ul>
+
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/pizzaking.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Pizza King
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, șuncă,ciuperci, măsline, capere, anghinare
+                  </p>
+                  <p>
+                    650 g Pizza King,
+                    1029 kcal,
+                    72 g carbohidrați,
+                    63 g proteine,
+                    49 g grăsimi,
+                    7 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      38 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/quatroformagi.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Quattro Formaggi
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, gorgonzola, emmentaller, parmezan
+                  </p>
+                  <p>
+                    500 g Pizza Quattro Formaggi,
+                    1125 kcal,
+                    105 g carbohidrați,
+                    50 g proteine,
+                    50 g grăsimi,
+                    12 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      38 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/quatrostagioni.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Quattro Stagioni
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, șuncă, salam, ciuperci, măsline
+                  </p>
+                  <p>
+                    600 g Pizza Quattro Stagioni,
+                    1126 kcal,
+                    69 g carbohidrați,
+                    73 g proteine,
+                    57 g grăsimi,
+                    7 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      36 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/salami.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Salami
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, salam, ciuperci, măsline, ceapă
+                  </p>
+                  <p>
+                    600 g Pizza Salami,
+                    1207 kcal,
+                    72 g carbohidrați,
+                    71 g proteine,
+                    66 g grăsimi,
+                    7 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      34 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/capriciosa.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Capriciosa
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, șuncă, ciuperci, porumb
+                  </p>
+                  <p>
+                    600 g Pizza Capriciosa,
+                    1004 kcal,
+                    78 g carbohidrați,
+                    66 g proteine,
+                    42 g grăsimi,
+                    7 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      35 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/picanta.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Picantă
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, salam picant, ardei iute
+                  </p>
+                  <p>
+                    500 g Pizza Picantă,
+                    1253 kcal,
+                    69 g carbohidrați,
+                    77 g proteine,
+                    71 g grăsimi,
+                    6 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      36 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/prosciuttoecrudo.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Prosciutto e Crudo
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, prosciutto crudo, roșii cherry, rucola, parmezan
+                  </p>
+                  <p>
+                    550 g Pizza Prosciutto e Crudo,
+                    1031 kcal,
+                    69 g carbohidrați,
+                    67 g proteine,
+                    48 g grăsimi,
+                    6 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      37 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/margherita.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Margherita
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, baby mozzarella, oregano, busuioc
+                  </p>
+                  <p>
+                    500 g Pizza Margherita,
+                    975 kcal,
+                    152 g carbohidrați,
+                    50 g proteine,
+                   <br>
+                    18 g grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      34 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/pizza/vegetariana.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Pizza Vegetariană/Post
+                  </h5>
+                  <p>
+                    ingrediente: sos roșii, mozzarella, ciuperci, porumb, măsline, ardei gras
+                  </p>
+                  <p>
+                    500 g Pizza Vegetariană/Post,
+                    973 kcal,
+                    80 g carbohidrați,
+                    54 g proteine,
+                    44 g grăsimi,
+                    8 g fibre
+                  </p>
+                  <div class="options">
+                    <h6>
+                      35 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/carbonara.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Paste carbonara
+                  </h5>
+                  <p>
+                    ingrediente: paste, smântână, mozzarella, bacon, usturoi, ou, parmezan
+                  </p>
+                  <p>
+                    500 g paste,
+                    1011 kcal,
+                    109 carbohidrați,
+                    46 g proteine,
+                    41 g grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      36 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/bolognese.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Paste Bolognese
+                  </h5>
+                  <p>
+                    ingrediente: paste, sos roșii, carne tocată, ceapă, usturoi, busuioc, oregano
+                  </p>
+                  <p>
+                    500 g paste,
+                    385 kcal,
+                    70 carbohidrați,
+                    10 g proteine,
+                    6 g grăsimi,
+                    5 g fibre                  
+                  </p>
+                  <div class="options">
+                    <h6>
+                      36 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/arrabiata.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Pene Arrabiata
+                  </h5>
+                  <p>
+                    ingrediente: paste, sos roșii, ardei iute, usturoi, pătrunjel, parmezan
+                  </p>
+                  <p>
+                    500 g paste,
+                    1135 kcal,
+                    150 carbohidrați,
+                    83 g proteine,
+                    87 g grăsimi,
+                    9 g fibre  
+                    8 g sare   
+                  </p>
+                  <div class="options">
+                    <h6>
+                      35 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/formagi.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Paste Quattro Formaggi
+                  </h5>
+                  <p>
+                    ingrediente: paste, smântână, gorgonzola, emmentaller, mozzarella, parmezan
+                  </p>
+                  <p>
+                    500 g paste,
+                    1135 kcal,
+                    150 carbohidrați,
+                    83 g proteine,
+                    87 g grăsimi,
+                    9 g fibre,  
+                    <br>
+                    8 g sare   
+                  </p>
+                  <div class="options">
+                    <h6>
+                      38 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/tagliatelecucreveti.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Tagliatele cu Creveți
+                  </h5>
+                  <p>
+                    ingrediente: paste, sos roșii, creveți roșii cherry, usturoi, pătrunjel, lămâie
+                  </p>
+                  <p>
+                    500 g paste,
+                    1303 kcal,
+                    157 carbohidrați,
+                    62 g proteine,
+                    44 g grăsimi,
+                    1 g fibre  
+                    <br>
+                    2 g sare   
+                  </p>
+                  <div class="options">
+                    <h6>
+                      42 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/paste/tagliatelecuton.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Tagliatele cu Ton
+                  </h5>
+                  <p>
+                    ingrediente: paste, sos roșii, usturoi, ton, busuioc, oregano , parmezan
+                  </p>
+                  <p>
+                    500 g paste,
+                    1237 kcal,
+                    195 carbohidrați,
+                    44 g proteine,
+                    29 g grăsimi,
+                    2 g fibre  
+                    <br>
+                    3 g sare   
+                  </p>
+                  <div class="options">
+                    <h6>
+                      37 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/burgerking.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Burger King
+                  </h5>
+                  <p>
+                    ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă caramelizată, sos King, sos barbeque
+                  </p>
+                  <p>
+                   500 g Burger King,
+                    966 kcal,
+                    57 g carbohidrați,
+                    50 g proteine,
+                    <br>
+                    56 g grăsimi
+                  </p>
+                  </p>
+                  <div class="options">
+                    <h6>
+                      37 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger ">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/burgervegan.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Vegetarian Burger
+                  </h5>
+                  <p>
+                    ingrediente: carne vegana, castraveți murați,salată, roșii, ceapă, maioneză, muștar,ketchup
+                  </p>
+                  <p>
+                     350 g Vegetarian Burger,
+                     732 kcal,
+                     59 g carbohidrați,
+                     36 g proteine,
+                     33 g grăsimi,
+                     3 g fibre
+                   </p>
+                  <div class="options">
+                    <h6>
+                      <b>33 lei</b>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/dublucheesburger.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Dublu Cheeseburger
+                  </h5>
+                  <p>
+                    ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă caramelizată, sos burger, maioneză
+                  </p>
+                  <p>
+                     500 g Dublu Cheeseburger,
+                     1202 kcal,
+                     50 g carbohidrați,
+                     58 g proteine,
+                     <br>
+                     81 g grăsimi
+                   </p>
+                  <div class="options">
+                    <h6>
+                      45 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/burgerpui.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Burger Pui
+                  </h5>
+                  <p>
+                      ingrediente: piept pui, cedar, mozzarella, castraveți murați,salată, roșii, ceapă, maioneză, muștar,ketchup
+                  </p>
+                  <p>
+                      400 g Burger Pui,
+                      517 kcal,
+                      52 g carbohidrați,
+                      18 g proteine,
+                      22 g grăsimi,
+                   </p>
+                  <div class="options">
+                    <h6>
+                      <b>33 lei</b>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/burgerclasic.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Burger Clasic
+                  </h5>
+                  <p>
+                    ingrediente: carne vită, cedar, mozzarella, castraveți murați,salată roșii, ceapă,sos burger, maioneză, ketchup
+                  </p>
+                  <p>
+                    400 g Burger Clasic,
+                     789 kcal,
+                     48 g carbohidrați,
+                     38 g proteine,
+                     44 g grăsimi
+                   </p>
+                  <div class="options">
+                    <h6>
+                      35 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/burgeri/cheesburger.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cheeseburger
+                  </h5>
+                  <p>
+                    ingrediente: carne vită, bacon, chedar, mozzarella, castraveți murați, ceapă, sos burger, maioneză
+                  </p>
+                  <p>
+                     400 g Cheeseburger,
+                     869 kcal,
+                     46 g carbohidrați,
+                     38 g proteine,
+                     54 g grăsimi
+                   </p>
+                  <div class="options">
+                    <h6>
+                      34 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/cartofiprajiti.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Cartofi prăjiți
+                  </h5>
+                  <p>
+                    200 g cartofi prăjiți
+                    48 kcal,
+                    6 g carbohidrați,
+                    4 g proteine 
+                  </p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/cartofidipping.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Cartofi Dipping   Strips
+                  </h5>
+                  <p>
+                    200 g cartofi prăjiți
+                    290 kcal,
+                    42 g carbohidrați,
+                    10 g proteine 
+                  </p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/cartofiwedges.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Cartofi Wedges
+                  </h5>
+                  <p>
+                    150 g cartofi wedges
+                    348 kcal,
+                    46 g carbohidrați,
+                    6 g proteine,
+                    15 grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/maioneza.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Maioneză
+                  </h5>
+                  <p>
+                    30 g Maioneză
+                    97 kcal,
+                    10g grăsimi,
+                    2 g glucide
+                  </p>
+                  <div class="options">
+                    <h6>
+                      3 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/ketchup.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Ketchup
+                  </h5>
+                  <p>
+                    30 g Ketchup
+                    20 kcal,
+                    0,04 g grăsimi,
+                    4 g glucide,
+                    0,4 g sare   
+                  </p>
+                  <div class="options">
+                    <h6>
+                      3 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/sosusturoi.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Sos de usturoi
+                  </h5>
+                  <p>
+                    50 g Sos de usturoi
+                    137 kcal,
+                    2 g carbohidrați,
+                    13 g grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      5 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/barbeque.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Barbeque
+                  </h5>
+                  <p>
+                    50 g Barbeque
+                    77 kcal,
+                    18 g carbohidrați,
+                    14 g glucide
+                  </p>
+                  <div class="options">
+                    <h6>
+                      5 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/sosrosii.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Sos de roșii
+                  </h5>
+                  <p>
+                    50 g Sos de roșii
+                    35 kcal,
+                    2 g carbohidrați,
+                    2 g grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      5 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all fries">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/sosurisigarnituri/sosrosiipicant.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Sos de roșii picant
+                  </h5>
+                  <p>
+                    50 g Sos de roșii picant
+                    64 kcal,
+                    2 g carbohidrați,
+                    6 g grăsimi
+                  </p>
+                  <div class="options">
+                    <h6>
+                      5 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/lava.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Lava Cake 
+                  </h5>
+                  <p>200 g</p>
+                  <h6>lava cake și înghețată de ciocolată / vanilie / capșuni / mango</h6>
+                  <div class="options">
+                    <h6>
+                      15 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/papanasi.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Papanași
+                  </h5>
+                  <p>250 g</p>
+                  <h6>papanași cu dulceață de afine si smântână / nutella și vanilie</h6>
+                  <div class="options">
+                    <h6>
+                      18 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/clatite.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Clătite
+                  </h5>
+                  <p>140 g</p>
+                  <h6>clătite nutella și ciocolată / mac și sos de cireșe / brânză dulce și stafide</h6>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/profiterol.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Profiterol
+                  </h5>
+                  <p>300 g</p>
+                  <h6>profiterol, cremă de vanilie,frișcă, înghețată, topping sirop</h6>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/laptedepasare.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Lapte de pasăre
+                  </h5>
+                  <p>300 g</p>
+                    <h6>cremă de budincă, bezea, zahăr ars, topping sirop</h6>
+                  <div class="options">
+                    <h6>
+                      18 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all desert">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/desert/ingetata.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Înghețată
+                  </h5>
+                  <p>200 g</p>
+                  <h6>înghețată cu gust de ciocolată / vanilie / capșuni / mango / fructe de pădure</h6>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/apaplatamare.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Apă Plată 
+                  </h5>
+                  <p>750 ml</p>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/apaplatamica.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Apă Plată
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      7 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/apamineralamare.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Apă minerală
+                  </h5>
+                  <p>750 ml</p>
+                  <div class="options">
+                    <h6>
+                      12 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/apamineralamica.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Apă minerală
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      7 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/cola.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Coca Cola
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/colazero.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Coca Cola Zero
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/fantaportocale.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Fanta de Portocale
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/cappypiersica.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cappy Piersici
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/cappyportocalerosii.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cappy Portocale Roșii
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/cappyportocale.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cappy Portocale
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/cappypere.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    Cappy Pere
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/sprite.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Sprite
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/nesteapiersica.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Nestea de piersică
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/nestealemon.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Nestea lemon
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/nesteamangoananas.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Nestea de mango & ananas
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      10 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/tonicwater.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Tonic Water
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/bitterlemon.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                      Bitter Lemon
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all bauturi">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/bauturi/mandarin.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                     Schweppes Mandarin
+                  </h5>
+                  <p>330 ml</p>
+                  <div class="options">
+                    <h6>
+                      8 lei
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </section>
+
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Noi suntem KingMaster
+              </h2>
+            </div>
+            <p>Restaurantul KingMaster este un local deschis de o perioadă scurtă, un restaurant cu gust și finețe.</p>
+            <p>Pentru noi fiecare detaliu contează, iar cu ajutorutorul vostru ne este confirmat faptul că ceea ce facem este foarte bine iar așa avem motivația necesară de a continua și de a fi tot mai buni in fiecare zi.</p> 
+            <p>Vă mulțumim că ați ales resturantul nostru. Suntem în continuă creștere datorită vouă și ne bucurăm să creștem împreună!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Rezervă o masă
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" placeholder="Nume și Prenume" />
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="Număr telefon" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Număr persoane
+                  </option>
+                  <option value="">
+                    1
+                  </option>
+                  <option value="">
+                    2
+                  </option>
+                  <option value="">
+                    3
+                  </option>
+                  <option value="">
+                    4
+                  </option>
+                  <option value="">
+                    5
+                  </option>
+                  <option value="">
+                    6
+                  </option>
+                  <option value="">
+                    7
+                  </option>
+                  <option value="">
+                    8
+                  </option>
+                  <option value="">
+                    9
+                  </option>
+                  <option value="">
+                    10
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="btn_box">
+                <button>
+                  Rezervă acum
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map_container ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1377.7350957187905!2d21.68519364250928!3d46.32035857995258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745f33320bf4a5d%3A0x92612310c97ad878!2sStera%20srl!5e0!3m2!1sro!2sro!4v1692058638468!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contactați- ne!
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Locația
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Telefon +40 740317487
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  kingmaster@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              KingMaster
+            </a>
+            <p>
+              Vă mulțumim că ați ales localul nostru, pentru a fi la curent cu tot ce se întâmplă la noi, ne găsiți pe rețelele de socializare de mai jos
+            </p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Orele deschiderii
+          </h4>
+          <p>
+            Luni - Duminică
+          </p>
+          <p>
+            10.00 - 23.00 
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="footer-info">
+        <span id="displayYear"></span>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01', 'id02');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+   
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
